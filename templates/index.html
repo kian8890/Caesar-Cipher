@@ -132,8 +132,9 @@
 
     {% if encrypted %}
       <div class="output">
-        <label>🌸 Encrypted Text</label>  <!-- نقل هذا الجزء ليكون قبل النتيجة -->
-        <p>{{ encrypted }}</p>
+        <!-- The label is now above the textarea -->
+        <label>🌸 Encrypted Text</label>
+        <textarea readonly>{{ encrypted }}</textarea> <!-- The encrypted text is inside a textarea -->
       </div>
     {% endif %}
   </div>
