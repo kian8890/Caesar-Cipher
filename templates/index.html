@@ -131,11 +131,9 @@
     </form>
 
     {% if encrypted %}
-      <div class="output">
-        <!-- The label is now above the textarea -->
-        <label>🌸 Encrypted Text</label>
-        <textarea readonly>{{ encrypted }}</textarea> <!-- The encrypted text is inside a textarea -->
-      </div>
+      <!-- Displaying the "Encrypted Text" label above the output textarea -->
+      <label for="encrypted-text">🌸 Encrypted Text</label>
+      <textarea id="encrypted-text" readonly>{{ encrypted }}</textarea>
     {% endif %}
   </div>
 </body>
